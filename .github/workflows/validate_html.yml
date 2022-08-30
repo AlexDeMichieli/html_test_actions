@@ -10,11 +10,8 @@ jobs:
       python-version: '3.10'
   - name: Install dependencies
     run:  pip install html5validator
-  - name: Check content 
-    run:  cd .. && cd ..
-  - name: Check content 
-    run:  ls
   - name:  Run Script
     run: |
+       cd _build
        html5validator --root _build/
     working-directory: _build/
