@@ -11,7 +11,9 @@ jobs:
   - name: Install dependencies
     run:  pip install html5validator
   - name: Check content 
-    run:  ls -a
+    run:  cd .. && cd ..
+  - name: Check content 
+    run:  ls
   - name:  Run Script
     run: |
        html5validator --root _build/
