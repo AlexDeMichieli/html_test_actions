@@ -13,6 +13,6 @@ jobs:
   - name: Install dependencies
     run:  pip install html5validator
   - name:  Run Script
+    working-directory: ./_build/
     run: |
        html5validator --root _build/
-    working-directory: _build/
