@@ -1,0 +1,9 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  HTMLProofer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
