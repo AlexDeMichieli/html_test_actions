@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: chabad360/htmlproofer@master
         with:
-          directory: ".public/"
+          directory: "../../folder/"
