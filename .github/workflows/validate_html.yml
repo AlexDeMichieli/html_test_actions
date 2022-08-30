@@ -1,22 +1,10 @@
-name: GitHub Actions Demo
+name: learn-github-actions
 on: [push]
 jobs:
-  HTMLProofer:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/cache@v2
+      - name: HTML5Validator
+      - uses: Cyb3r-Jak3/html5validator-action
         with:
-          path: tmp/.htmltest
-          key: ${{ runner.os }}-htmltest
-      - name: htmltest-action
-        uses: wjdp/htmltest-action@v0.13.0-rc1
-
-# - uses: actions/cache@v2
-#   with:
-#     path: tmp/.htmltest
-#     key: ${{ runner.os }}-htmltest
-
-# - name: HTML Test
-#   run: |
-#     curl https://htmltest.wjdp.uk | bash
-#     bin/htmltest
+          root: tests/
