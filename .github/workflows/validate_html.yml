@@ -6,13 +6,17 @@ jobs:
   steps:
   - name: Checkout
     uses: actions/checkout@v2
-  - name: Set up Python
-    uses: actions/setup-python@v4
+  - name: HTML test
+    uses: Cyb3r-Jak3/html5validator-action@v7.1.1
     with:
-      python-version: '3.10'
-  - name: Install dependencies
-    run:  pip install html5validator
-  - name:  Run Script
-    working-directory: ./_build/
-    run: |
-       html5validator --root _build/
+       root: _build/
+#   - name: Set up Python
+#     uses: actions/setup-python@v4
+#     with:
+#       python-version: '3.10'
+#   - name: Install dependencies
+#     run:  pip install html5validator
+#   - name:  Run Script
+#     working-directory: ./_build/
+#     run: |
+#        html5validator --root _build/
