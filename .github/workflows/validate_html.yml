@@ -12,6 +12,6 @@ jobs:
     run:  pip install html5validator
   - name:  Run Script
     run: |
-       cd _build
+       cd html_test_actions/
        html5validator --root _build/
     working-directory: _build/
