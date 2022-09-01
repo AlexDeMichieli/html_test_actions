@@ -29,6 +29,7 @@ jobs:
     working-directory: ./_build/
     run: |
        ls -a
+       pwd
   - name:  Run Script
     working-directory: ./_build/
     run: |
