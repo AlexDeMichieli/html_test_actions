@@ -31,6 +31,6 @@ jobs:
        ls -a
        pwd
   - name:  Run Script
-    working-directory: ./_build/
+    # working-directory: ./_build/
     run: |
        html5validator --root _build/ 
